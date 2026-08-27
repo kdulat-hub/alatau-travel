@@ -1,3 +1,503 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ALATAU — Mountain Escape</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--green:#087f43;--mint:#8ee4c4;--black:#070908}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--green);font-family:Inter,sans-serif;color:var(--black)}a{text-decoration:none;color:inherit}.shell{margin:12px;border-radius:34px 34px 0 0;overflow:hidden;background:#fff}.promo{height:32px;background:var(--mint);display:flex;justify-content:center;align-items:center;gap:30px;font-size:10px;font-weight:800;letter-spacing:.16em}.nav{height:80px;background:var(--black);color:#fff;display:flex;align-items:center;padding:0 48px;gap:55px}.logo{font-weight:800;letter-spacing:.18em;font-size:20px;color:var(--mint)}.links{display:flex;gap:34px;margin:auto;font-size:11px;font-weight:700;letter-spacing:.08em}.nav-btn{background:#fff;color:#111;padding:15px 23px;border-radius:999px;font-size:12px;font-weight:700}.hero{height:650px;position:relative;overflow:hidden;background:linear-gradient(120deg,#f2f5f3,#d9e0dd)}.big-word{position:absolute;left:12%;top:36%;font-size:clamp(150px,21vw,350px);font-weight:800;letter-spacing:-.09em;color:#fff;line-height:.8}.mountain{position:absolute;z-index:2;left:37%;right:5%;top:11%;bottom:0;background:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=90') center/cover;clip-path:polygon(0 79%,14% 55%,26% 66%,42% 33%,52% 53%,65% 15%,79% 53%,89% 37%,100% 70%,100% 100%,0 100%);filter:saturate(.65) contrast(1.15) drop-shadow(0 26px 25px #243a3245)}.hero-left{position:absolute;z-index:4;left:5%;top:11%}.kicker{color:#178b66;font-size:10px;font-weight:800;letter-spacing:.17em}.hero h1{font-size:72px;line-height:.88;letter-spacing:-.065em;margin:18px 0}.hero p{font-size:15px;line-height:1.55;color:#48514e}.note{position:absolute;z-index:4;right:5%;top:11%;display:flex;gap:13px;font-size:10px;font-weight:700;line-height:1.5;letter-spacing:.07em}.note:before{content:'';width:1px;height:34px;background:#74817c}.action{position:absolute;z-index:5;left:5%;bottom:8%;display:flex;align-items:center;gap:25px}.button{display:inline-flex;align-items:center;gap:18px;background:#080909;color:#fff;border-radius:999px;padding:13px 14px 13px 22px;font-size:12px;font-weight:700}.button i{width:26px;height:26px;border-radius:50%;background:var(--mint);color:#111;display:grid;place-items:center;font-style:normal}.counter{font-size:10px;font-weight:800;letter-spacing:.14em}.coords{position:absolute;z-index:5;right:6%;bottom:7%;font-size:10px;font-weight:800;line-height:1.5}.intro{padding:120px 6% 100px;background:#fff;display:grid;grid-template-columns:1.1fr 1fr;gap:80px}.intro h2,.routes h2{font-size:68px;line-height:.95;letter-spacing:-.06em;margin:15px 0}.intro-copy{align-self:end;color:#626b68;line-height:1.7;max-width:500px}.metrics{display:flex;gap:50px;margin-top:35px}.metrics b{font-size:25px;display:block;color:#111}.metrics span{font-size:11px}.routes{background:#0a0d0c;color:#fff;padding:110px 6%}.routes-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:50px}.routes-head p{max-width:390px;color:#929b97;line-height:1.6}.grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px}.card{height:470px;border-radius:20px;position:relative;overflow:hidden;cursor:pointer}.card img{width:100%;height:100%;object-fit:cover;transition:.5s}.card:hover img{transform:scale(1.05)}.shade{position:absolute;inset:0;background:linear-gradient(0deg,#07100cd9,transparent 68%)}.card-copy{position:absolute;left:24px;right:24px;bottom:24px}.card small{color:var(--mint);font-weight:700;letter-spacing:.13em}.card h3{font-size:32px;line-height:1;margin:13px 0}.card p{color:#c1c8c5;font-size:12px}.book{background:var(--mint);padding:100px 6%;display:flex;align-items:center;justify-content:space-between}.book h2{font-size:65px;letter-spacing:-.06em;margin:0;line-height:.95}.book a{background:#080909;color:#fff;border-radius:999px;padding:18px 28px;font-weight:700;font-size:13px}footer{background:#080909;color:#fff;padding:30px 6%;display:flex;justify-content:space-between;font-size:11px;color:#8e9894}@media(max-width:850px){.links{display:none}.nav{padding:0 22px}.hero{height:720px}.hero h1{font-size:57px}.note,.coords{display:none}.mountain{left:8%;right:-22%;top:34%}.big-word{left:-2%;top:52%;font-size:31vw}.intro{grid-template-columns:1fr;padding:80px 7%}.intro h2,.routes h2,.book h2{font-size:48px}.grid{grid-template-columns:1fr}.card{height:430px}.routes-head,.book{display:block}.routes-head p{margin-top:25px}.book a{display:inline-block;margin-top:35px}.promo{font-size:7px}.shell{margin:7px}.nav-btn{padding:12px 14px}}
-</style></head><body><div class="shell"><div class="promo">WEEKEND TOURS FROM ALMATY <span>•</span> NEW AUTUMN ROUTES</div><nav class="nav"><a class="logo">ALATAU</a><div class="links"><a href="#routes">МАРШРУТЫ</a><a href="#about">ЭКИПИРОВКА</a><a href="#about">О НАС</a><a href="#book">КОНТАКТЫ</a></div><a class="nav-btn" href="#book">Забронировать</a></nav><main><section class="hero"><div class="big-word">ALATAU</div><div class="mountain"></div><div class="hero-left"><div class="kicker">ALATAU / SIGNATURE ROUTE</div><h1>Mountain<br>Escape</h1><p>Один день среди вершин,<br>ледников и чистого воздуха.</p></div><div class="note">ПОДЪЁМ НА ВЫСОТУ 3 200 М.<br>МАРШРУТ ИЗ СЕРДЦА АЛМАТЫ.</div><div class="action"><a class="button" href="#routes">Выбрать маршрут <i>→</i></a><span class="counter">01 / 03</span></div><div class="coords">43°09′N<br>77°04′E<br>ILE ALATAU</div></section><section class="intro" id="about"><div><div class="kicker">ВЫШЕ ГОРОДА</div><h2>Большие горы.<br>Маленькие группы.</h2></div><div class="intro-copy">Авторские маршруты по Заилийскому Алатау без суеты и туристического шума.<div class="metrics"><div><b>3 200 м</b><span>высота</span></div><div><b>6</b><span>человек</span></div><div><b>8 ч</b><span>путь</span></div></div></div></section><section class="routes" id="routes"><div class="routes-head"><div><div class="kicker">ТРИ НАПРАВЛЕНИЯ</div><h2>Выберите<br>свою высоту.</h2></div><p>От первого знакомства с горами до настоящего восхождения — с гидом, трансфером и экипировкой.</p></div><div class="grid"><article class="card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"><div class="shade"></div><div class="card-copy"><small>01 · ЛЁГКИЙ</small><h3>Медеу → Шымбулак</h3><p>39 000 ₸ · 6 часов</p></div></article><article class="card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85"><div class="shade"></div><div class="card-copy"><small>02 · СРЕДНИЙ</small><h3>Большое Алматинское</h3><p>49 000 ₸ · 8 часов</p></div></article><article class="card"><img src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=900&q=85"><div class="shade"></div><div class="card-copy"><small>03 · ВЫШЕ</small><h3>Пик Фурманова</h3><p>59 000 ₸ · полный день</p></div></article></div></section><section class="book" id="book"><h2>Горы уже<br>ждут вас.</h2><a href="mailto:hello@alatau.kz">Оставить заявку →</a></section></main><footer><b>ALATAU</b><span>Путешествия по горам Алматы</span><span>© 2026</span></footer></div></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ALATAU — Mountain Escape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --green: #087f43;
+        --mint: #8ee4c4;
+        --black: #070908;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--green);
+        font-family: Inter, sans-serif;
+        color: var(--black);
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .shell {
+        margin: 12px;
+        border-radius: 34px 34px 0 0;
+        overflow: hidden;
+        background: #fff;
+      }
+      .promo {
+        height: 32px;
+        background: var(--mint);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+      }
+      .nav {
+        height: 80px;
+        background: var(--black);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 48px;
+        gap: 55px;
+      }
+      .logo {
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        font-size: 20px;
+        color: var(--mint);
+      }
+      .links {
+        display: flex;
+        gap: 34px;
+        margin: auto;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+      .nav-btn {
+        background: #fff;
+        color: #111;
+        padding: 15px 23px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .hero {
+        height: 650px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(120deg, #f2f5f3, #d9e0dd);
+      }
+      .big-word {
+        position: absolute;
+        left: 12%;
+        top: 36%;
+        font-size: clamp(150px, 21vw, 350px);
+        font-weight: 800;
+        letter-spacing: -0.09em;
+        color: #fff;
+        line-height: 0.8;
+      }
+      .mountain {
+        position: absolute;
+        z-index: 2;
+        left: 37%;
+        right: 5%;
+        top: 11%;
+        bottom: 0;
+        background: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=90")
+          center/cover;
+        clip-path: polygon(
+          0 79%,
+          14% 55%,
+          26% 66%,
+          42% 33%,
+          52% 53%,
+          65% 15%,
+          79% 53%,
+          89% 37%,
+          100% 70%,
+          100% 100%,
+          0 100%
+        );
+        filter: saturate(0.65) contrast(1.15) drop-shadow(0 26px 25px #243a3245);
+      }
+      .hero-left {
+        position: absolute;
+        z-index: 4;
+        left: 5%;
+        top: 11%;
+      }
+      .kicker {
+        color: #178b66;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.17em;
+      }
+      .hero h1 {
+        font-size: 72px;
+        line-height: 0.88;
+        letter-spacing: -0.065em;
+        margin: 18px 0;
+      }
+      .hero p {
+        font-size: 15px;
+        line-height: 1.55;
+        color: #48514e;
+      }
+      .note {
+        position: absolute;
+        z-index: 4;
+        right: 5%;
+        top: 11%;
+        display: flex;
+        gap: 13px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.07em;
+      }
+      .note:before {
+        content: "";
+        width: 1px;
+        height: 34px;
+        background: #74817c;
+      }
+      .action {
+        position: absolute;
+        z-index: 5;
+        left: 5%;
+        bottom: 8%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 18px;
+        background: #080909;
+        color: #fff;
+        border-radius: 999px;
+        padding: 13px 14px 13px 22px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .button i {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: var(--mint);
+        color: #111;
+        display: grid;
+        place-items: center;
+        font-style: normal;
+      }
+      .counter {
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+      }
+      .coords {
+        position: absolute;
+        z-index: 5;
+        right: 6%;
+        bottom: 7%;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 1.5;
+      }
+      .intro {
+        padding: 120px 6% 100px;
+        background: #fff;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 80px;
+      }
+      .intro h2,
+      .routes h2 {
+        font-size: 68px;
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+        margin: 15px 0;
+      }
+      .intro-copy {
+        align-self: end;
+        color: #626b68;
+        line-height: 1.7;
+        max-width: 500px;
+      }
+      .metrics {
+        display: flex;
+        gap: 50px;
+        margin-top: 35px;
+      }
+      .metrics b {
+        font-size: 25px;
+        display: block;
+        color: #111;
+      }
+      .metrics span {
+        font-size: 11px;
+      }
+      .routes {
+        background: #0a0d0c;
+        color: #fff;
+        padding: 110px 6%;
+      }
+      .routes-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 50px;
+      }
+      .routes-head p {
+        max-width: 390px;
+        color: #929b97;
+        line-height: 1.6;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr 1fr;
+        gap: 14px;
+      }
+      .card {
+        height: 470px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+      .card:hover img {
+        transform: scale(1.05);
+      }
+      .shade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, #07100cd9, transparent 68%);
+      }
+      .card-copy {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+      }
+      .card small {
+        color: var(--mint);
+        font-weight: 700;
+        letter-spacing: 0.13em;
+      }
+      .card h3 {
+        font-size: 32px;
+        line-height: 1;
+        margin: 13px 0;
+      }
+      .card p {
+        color: #c1c8c5;
+        font-size: 12px;
+      }
+      .book {
+        background: var(--mint);
+        padding: 100px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .book h2 {
+        font-size: 65px;
+        letter-spacing: -0.06em;
+        margin: 0;
+        line-height: 0.95;
+      }
+      .book a {
+        background: #080909;
+        color: #fff;
+        border-radius: 999px;
+        padding: 18px 28px;
+        font-weight: 700;
+        font-size: 13px;
+      }
+      footer {
+        background: #080909;
+        color: #fff;
+        padding: 30px 6%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        color: #8e9894;
+      }
+      @media (max-width: 850px) {
+        .links {
+          display: none;
+        }
+        .nav {
+          padding: 0 22px;
+        }
+        .hero {
+          height: 720px;
+        }
+        .hero h1 {
+          font-size: 57px;
+        }
+        .note,
+        .coords {
+          display: none;
+        }
+        .mountain {
+          left: 8%;
+          right: -22%;
+          top: 34%;
+        }
+        .big-word {
+          left: -2%;
+          top: 52%;
+          font-size: 31vw;
+        }
+        .intro {
+          grid-template-columns: 1fr;
+          padding: 80px 7%;
+        }
+        .intro h2,
+        .routes h2,
+        .book h2 {
+          font-size: 48px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          height: 430px;
+        }
+        .routes-head,
+        .book {
+          display: block;
+        }
+        .routes-head p {
+          margin-top: 25px;
+        }
+        .book a {
+          display: inline-block;
+          margin-top: 35px;
+        }
+        .promo {
+          font-size: 7px;
+        }
+        .shell {
+          margin: 7px;
+        }
+        .nav-btn {
+          padding: 12px 14px;
+        }
+      }
+      .details,.faq{background:#f3f6f4;padding:110px 6%}.details h2,.reviews h2,.faq h2,.included h2{font-size:58px;letter-spacing:-.055em;line-height:.98;margin:14px 0 45px}.timeline{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #bac5c0}.time{padding:27px 24px 20px 0;border-right:1px solid #bac5c0}.time:last-child{border-right:0}.time b{color:#16865f}.time p,.faq details p{font-size:13px;color:#65706c;line-height:1.6}.included{background:#fff;padding:110px 6%;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check{border:1px solid #dce3e0;border-radius:17px;padding:22px;font-size:14px;font-weight:600}.check span{display:block;color:#178b66;font-size:20px}.reviews{background:#0a0d0c;color:#fff;padding:110px 6%}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.review{background:#151a18;border:1px solid #29312e;border-radius:20px;padding:28px}.review p{color:#c3cbc8;line-height:1.7;min-height:110px}.review small{display:block;color:#7f8a86;margin-top:6px}.faq details{border-top:1px solid #dce2df;padding:22px 0}.faq summary{cursor:pointer;font-size:17px;font-weight:600}.book{display:block}.book-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.lead-form{background:#fff;border-radius:24px;padding:26px;color:#111;display:grid;grid-template-columns:1fr 1fr;gap:14px}.lead-form label{font-size:11px;font-weight:700}.lead-form input,.lead-form select,.lead-form textarea{display:block;width:100%;margin-top:8px;border:1px solid #d5ddda;border-radius:12px;padding:14px;font:14px Inter;background:#f8faf9}.lead-form textarea{height:100px}.wide,.lead-form button,.form-note,.toast{grid-column:1/-1}.lead-form button{border:0;background:#080909;color:#fff;border-radius:999px;padding:17px;font:700 13px Inter;cursor:pointer}.form-note{font-size:11px;color:#64706b;text-align:center}.toast{display:none;color:#087f43;text-align:center}.route-modal{position:fixed;z-index:20;inset:0;background:#050706d9;display:none;place-items:center;padding:20px}.route-modal.open{display:grid}.modal-card{background:#fff;border-radius:24px;padding:35px;max-width:540px;position:relative}.close{position:absolute;right:18px;top:15px;border:0;background:none;font-size:28px}@media(max-width:850px){.timeline,.review-grid,.included,.book-wrap{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.lead-form{grid-template-columns:1fr}.wide,.lead-form button,.form-note,.toast{grid-column:1}.details h2,.reviews h2,.faq h2,.included h2{font-size:44px}}
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="promo">
+        WEEKEND TOURS FROM ALMATY <span>•</span> NEW AUTUMN ROUTES
+      </div>
+      <nav class="nav">
+        <a class="logo">ALATAU</a>
+        <div class="links">
+          <a href="#routes">МАРШРУТЫ</a><a href="#about">ЭКИПИРОВКА</a
+          ><a href="#about">О НАС</a><a href="#book">КОНТАКТЫ</a>
+        </div>
+        <a class="nav-btn" href="#book">Забронировать</a>
+      </nav>
+      <main>
+        <section class="hero">
+          <div class="big-word">ALATAU</div>
+          <div class="mountain"></div>
+          <div class="hero-left">
+            <div class="kicker">ALATAU / SIGNATURE ROUTE</div>
+            <h1>Mountain<br />Escape</h1>
+            <p>Один день среди вершин,<br />ледников и чистого воздуха.</p>
+          </div>
+          <div class="note">
+            ПОДЪЁМ НА ВЫСОТУ 3 200 М.<br />МАРШРУТ ИЗ СЕРДЦА АЛМАТЫ.
+          </div>
+          <div class="action">
+            <a class="button" href="#routes">Выбрать маршрут <i>→</i></a
+            ><span class="counter">01 / 03</span>
+          </div>
+          <div class="coords">43°09′N<br />77°04′E<br />ILE ALATAU</div>
+        </section>
+        <section class="intro" id="about">
+          <div>
+            <div class="kicker">ВЫШЕ ГОРОДА</div>
+            <h2>Большие горы.<br />Маленькие группы.</h2>
+          </div>
+          <div class="intro-copy">
+            Авторские маршруты по Заилийскому Алатау без суеты и туристического
+            шума.
+            <div class="metrics">
+              <div><b>3 200 м</b><span>высота</span></div>
+              <div><b>6</b><span>человек</span></div>
+              <div><b>8 ч</b><span>путь</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="routes" id="routes">
+          <div class="routes-head">
+            <div>
+              <div class="kicker">ТРИ НАПРАВЛЕНИЯ</div>
+              <h2>Выберите<br />свою высоту.</h2>
+            </div>
+            <p>
+              От первого знакомства с горами до настоящего восхождения — с
+              гидом, трансфером и экипировкой.
+            </p>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"
+              />
+              <div class="shade"></div>
+              <div class="card-copy">
+                <small>01 · ЛЁГКИЙ</small>
+                <h3>Медеу → Шымбулак</h3>
+                <p>39 000 ₸ · 6 часов</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85"
+              />
+              <div class="shade"></div>
+              <div class="card-copy">
+                <small>02 · СРЕДНИЙ</small>
+                <h3>Большое Алматинское</h3>
+                <p>49 000 ₸ · 8 часов</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=900&q=85"
+              />
+              <div class="shade"></div>
+              <div class="card-copy">
+                <small>03 · ВЫШЕ</small>
+                <h3>Пик Фурманова</h3>
+                <p>59 000 ₸ · полный день</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="details" id="program"><div class="kicker">ПРОГРАММА ДНЯ</div><h2>От города<br>до облаков.</h2><div class="timeline"><div class="time"><b>07:00</b><h3>Встреча</h3><p>Забираем группу из центра Алматы.</p></div><div class="time"><b>08:30</b><h3>Начало пути</h3><p>Инструктаж и выход на маршрут.</p></div><div class="time"><b>12:30</b><h3>Высшая точка</h3><p>Пикник и время для фотографий.</p></div><div class="time"><b>18:00</b><h3>Возвращение</h3><p>Спуск и трансфер в город.</p></div></div></section>
+        <section class="included"><div><div class="kicker">ВСЁ ВКЛЮЧЕНО</div><h2>Только вы<br>и горы.</h2></div><div class="checklist"><div class="check"><span>✓</span>Опытный горный гид</div><div class="check"><span>✓</span>Трансфер из Алматы</div><div class="check"><span>✓</span>Треккинговые палки</div><div class="check"><span>✓</span>Пикник и горячий чай</div><div class="check"><span>✓</span>Аптечка и страховка</div><div class="check"><span>✓</span>Фото с маршрута</div></div></section>
+        <section class="reviews"><div class="kicker">ОТЗЫВЫ</div><h2>Впечатления,<br>которые остаются.</h2><div class="review-grid"><article class="review"><p>«Идеальный первый поход. Комфортный темп и невероятные виды».</p><b>Алина К.</b><small>Медеу → Шымбулак</small></article><article class="review"><p>«Отличная организация и места, которые сама бы не нашла».</p><b>Диана С.</b><small>Большое Алматинское озеро</small></article><article class="review"><p>«Подъём был непростым, но вид с пика полностью стоил усилий».</p><b>Арман Т.</b><small>Пик Фурманова</small></article></div></section>
+        <section class="faq"><div class="kicker">ЧАСТЫЕ ВОПРОСЫ</div><h2>Перед подъёмом.</h2><details><summary>Нужен ли опыт походов?</summary><p>Для лёгкого маршрута опыт не нужен. Для пика нужна базовая физическая подготовка.</p></details><details><summary>Что взять с собой?</summary><p>Удобную обувь, ветровку, воду и документ. Основную экипировку предоставим мы.</p></details><details><summary>Что будет при плохой погоде?</summary><p>Предложим безопасную альтернативу или перенесём путешествие.</p></details></section>
+        <section class="book" id="book"><div class="book-wrap"><div><div class="kicker">БРОНИРОВАНИЕ</div><h2>Горы уже<br>ждут вас.</h2><p>Заполните форму — заявка откроется готовым сообщением в WhatsApp.</p></div><form class="lead-form" id="leadForm"><label>Ваше имя<input id="name" required placeholder="Дулат"></label><label>Телефон<input id="phone" required placeholder="+7 700 000 00 00"></label><label>Маршрут<select id="route"><option>Медеу → Шымбулак</option><option>Большое Алматинское озеро</option><option>Пик Фурманова</option></select></label><label>Дата<input id="date" type="date" required></label><label class="wide">Комментарий<textarea id="comment" placeholder="Количество участников"></textarea></label><button type="submit">Отправить заявку в WhatsApp →</button><div class="toast" id="toast">Заявка сформирована — открываем WhatsApp…</div><div class="form-note">Данные используются только для связи по заявке.</div></form></div></section>
+      </main>
+      <footer>
+        <b>ALATAU</b><span>Путешествия по горам Алматы</span><span>© 2026</span>
+      </footer>
+    </div><div class="route-modal" id="routeModal"><div class="modal-card"><button class="close" id="closeModal">×</button><div class="kicker">ВЫБРАННЫЙ МАРШРУТ</div><h2 id="modalTitle"></h2><p id="modalText"></p><a class="button" id="modalBook" href="#book">Забронировать <i>→</i></a></div></div><script>const cards=document.querySelectorAll('.card'),modal=document.getElementById('routeModal'),title=document.getElementById('modalTitle'),desc=document.getElementById('modalText'),route=document.getElementById('route');const info=[['Медеу → Шымбулак','Лёгкий маршрут на 6 часов. Подходит новичкам.'],['Большое Алматинское озеро','Маршрут средней сложности на 8 часов.'],['Пик Фурманова','Восхождение для участников с хорошей физической формой.']];cards.forEach((c,i)=>c.onclick=()=>{title.textContent=info[i][0];desc.textContent=info[i][1];route.selectedIndex=i;modal.classList.add('open')});document.getElementById('closeModal').onclick=()=>modal.classList.remove('open');document.getElementById('modalBook').onclick=()=>modal.classList.remove('open');document.getElementById('leadForm').onsubmit=e=>{e.preventDefault();const message=`Новая заявка ALATAU\n\nИмя: ${name.value}\nТелефон: ${phone.value}\nМаршрут: ${route.value}\nДата: ${date.value}\nКомментарий: ${comment.value||'—'}`;document.getElementById('toast').style.display='block';setTimeout(()=>window.open('https://wa.me/?text='+encodeURIComponent(message),'_blank'),300)};</script>
+  </body>
+</html>
